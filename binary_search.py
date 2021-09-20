@@ -5,7 +5,7 @@ def binary_search(a_list, num):
 	while low <= high:
 		mid = (high + low) // 2
 		if a_list[mid] < num:
-			low = mod + 1
+			low = mid + 1
 		elif a_list[mid] > num:
 			high = mid - 1
 		else:
